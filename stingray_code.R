@@ -1,4 +1,3 @@
-SRmain <- read.csv(file = "sting_master.csv")
-SRres <- read.csv(file = "sting_residency.csv")
-SRioa <- read.csv(file = "sting_ioa.csv")
-str(SRioa)
+SRmain <- read.csv(file = "sting_master.csv", header = TRUE)
+SRres <- read.csv(file = "sting_residency.csv", header = TRUE)
+SRioa <- read.csv(file = "sting_ioa.csv", header = TRUE)
