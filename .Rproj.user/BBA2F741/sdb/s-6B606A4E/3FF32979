@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1398240876773.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3FF32979",
+    "lastKnownWriteTime" : 17600775979022,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "SRres",
+        "contentUrl" : "content?title=SRres&file=dd2e469b01ca4576ac007157f473d440.htm",
+        "displayedObservations" : 127,
+        "displayedVariables" : 14,
+        "totalObservations" : 127,
+        "variables" : 14
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}
