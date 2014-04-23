@@ -1,0 +1,17 @@
+{
+    "contents" : "SRmain <- read.csv(file = \"sting_master.csv\", header = TRUE)\nSRres <- read.csv(file = \"sting_residency.csv\", header = TRUE)\nSRioa <- read.csv(file = \"sting_ioa.csv\", header = TRUE)\nSRquick <- read.csv(file = \"Quick_Sting_master_n16_2014.csv\", header = TRUE)\nSRmain$fSurvey <- factor(SRmain$Survey)\nSRmain$fID <- factor(SRmain$ID)\n\n#Area vs. Count \nreg1Area <- lm(SRquick$Count ~ SRquick$Area)\nreg1Area\nplot(SRquick$Count ~ SRquick$Area)\nabline(reg1Area)\n#Area vs. Male Count\nreg1AreaM <- lm(SRquick$CountM ~ SRquick$Area)\nreg1AreaM\nplot(SRquick$CountM ~ SRquick$Area)\nabline(reg1AreaM)\n#Area vs. Female Count\nreg1AreaF <- lm(SRquick$CountF ~ SRquick$Area)\nreg1AreaF\nplot(SRquick$CountF ~ SRquick$Area)\nabline(reg1AreaF)\n\n#Coral Cover vs. Count \nreg1Coralcover <- lm(SRquick$Count ~ SRquick$Coralcover)\nreg1Coralcover\nplot(SRquick$Count ~ SRquick$Coralcover)\nabline(reg1Coralcover)\n#Coral Cover vs. Male Count\nreg1CoralcoverM <- lm(SRquick$CountM ~ SRquick$Coralcover)\nreg1CoralcoverM\nplot(SRquick$CountM ~ SRquick$Coralcover)\nabline(reg1CoralcoverM)\n#Coral Cover vs. Female Count\nreg1CoralcoverF <- lm(SRquick$CountF ~ SRquick$Coralcover)\nreg1CoralcoverF\nplot(SRquick$CountF ~ SRquick$Coralcover)\nabline(reg1CoralcoverF)\n\n#Rugosity vs. Count \nreg1Rugosity <- lm(SRquick$Count ~ SRquick$Rugosity)\nreg1Rugosity\nplot(SRquick$Count ~ SRquick$Rugosity)\nabline(reg1Rugosity)\n#Rugosity vs. Male Count\nreg1RugosityM <- lm(SRquick$CountM ~ SRquick$Rugosity)\nreg1RugosityM\nplot(SRquick$CountM ~ SRquick$Rugosity)\nabline(reg1RugosityM)\n#Rugosity vs. Female Count\nreg1RugosityF <- lm(SRquick$CountF ~ SRquick$Rugosity)\nreg1RugosityF\nplot(SRquick$CountF ~ SRquick$Rugosity)\nabline(reg1RugosityF)\n\n#Lionfish vs. Count \nreg1Lionfish <- lm(SRquick$Count ~ SRquick$Lionfish)\nreg1Lionfish\nplot(SRquick$Count ~ SRquick$Lionfish)\nabline(reg1Lionfish)\n#Lionfish vs. Male Count\nreg1LionfishM <- lm(SRquick$CountM ~ SRquick$Lionfish)\nreg1LionfishM\nplot(SRquick$CountM ~ SRquick$Lionfish)\nabline(reg1LionfishM)\n#Lionfish vs. Female Count\nreg1LionfishF <- lm(SRquick$CountF ~ SRquick$Lionfish)\nreg1LionfishF\nplot(SRquick$CountF ~ SRquick$Lionfish)\nabline(reg1LionfishF)\n\n#SiteRes.score2 vs. Count \nreg1SiteRes.score <- lm(SRquick$Count ~ SRquick$SiteRes.score2)\nreg1SiteRes.score\nplot(SRquick$Count ~ SRquick$SiteRes.score2)\nabline(reg1SiteRes.score)\n\n#test \nSRmain1m <- SRmain[SRmain$Survey == 1 & SRmain$Sex == \"m\" , ]\nM1 <- boxplot(HAS ~ Treatment, data = SRmain)\n#test boxplot\nboxplot(TL ~ fSurvey * Sex, data = SRmain)\n#just females from SRmain\nSRmFe <- subset(SRmain, SRmain$Sex == \"f\")\nSRmFe\n#just males from SRmain\nSRmMa <- subset(SRmain, SRmain$Sex == \"m\")\nSRmMa\n\n\nlibrary(\"plyr\")\n()\nreg1 <- lm(SRmain$TL ~ SRmain$IndResscore)\nreg1\npar(cex = .8)\nplot(SRmain$Area, SRmain$IndResscore)\nabline(reg1)\n\nhist(SRres$HAS)asf\n",
+    "created" : 1398111854974.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3734373887",
+    "id" : "7AD2D355",
+    "lastKnownWriteTime" : 1398239395,
+    "path" : "~/Documents/School/SP14/498/R_stingray_project_2014/498 stingray project/stingray_code.R",
+    "project_path" : "stingray_code.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

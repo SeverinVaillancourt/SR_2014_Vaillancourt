@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1398238395320.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "7DD34BCE",
+    "lastKnownWriteTime" : 0,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "SRquick",
+        "contentUrl" : "content?title=SRquick&file=55610f240fb645d7964081eaa7f6cf85.htm",
+        "displayedObservations" : 16,
+        "displayedVariables" : 11,
+        "totalObservations" : 16,
+        "variables" : 11
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}
